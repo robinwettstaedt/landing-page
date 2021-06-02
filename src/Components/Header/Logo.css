@@ -1,0 +1,55 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.logo-container .logo :first-child {
+    fill: white;
+    font-size: 50px;
+}
+
+.logo-container p {
+    font-family: sans-serif;
+    font-weight: 50;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.logo-container-scroll .logo :first-child {
+    fill: black;
+}
+
+.logo-container-scroll p {
+    color: black;
+}
+
+@media screen and (max-width:1200px) {
+    .logo-container {
+        margin-left: 1.5rem;
+    }
+    .logo-container .logo :first-child {
+        font-size: 35px;
+    }
+    .logo-container p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .logo-container {
+        margin-left: 1.2rem;
+    }
+    .logo-container-scroll .logo :first-child {
+        font-size: 30px;
+    }
+    .logo-container-scroll p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:480px) {}

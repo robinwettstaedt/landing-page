@@ -1,0 +1,94 @@
+:root {
+    --transparency: 0.85;
+}
+
+main {
+    background-image: linear-gradient(to right top, rgba(53, 35, 116, var(--transparency)), rgba(52, 73, 155, var(--transparency)), rgba(49, 111, 192, var(--transparency)), rgba(50, 149, 225, var(--transparency)), rgba(66, 188, 255, var(--transparency))), url("../../Assets/desk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-container {
+    margin-top: 10rem;
+    width: 27rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article-container h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.hero-paragraph {
+    font-size: 1rem;
+    color: white;
+}
+
+.image {
+    width: 300px;
+    margin-right: 4rem;
+    margin-top: 10rem;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (max-width:1200px) {
+    .article-container {
+        margin-top: 8rem;
+        width: 23rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article-container h1 {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    .article-container p {
+        font-size: 0.8rem;
+    }
+    .image {
+        width: 300px;
+        margin-right: 0;
+        margin-top: 8rem;
+    }
+    img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .article-container {
+        margin-top: 9rem;
+        width: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article-container h1 {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    .article-container p {
+        font-size: 0.8rem;
+    }
+    .image {
+        width: 300px;
+        margin-right: -4rem;
+        margin-top: 4rem;
+    }
+    img {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:480px) {}

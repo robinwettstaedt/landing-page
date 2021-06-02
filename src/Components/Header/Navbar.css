@@ -1,0 +1,34 @@
+.navbar {
+    width: 100vw;
+    height: 4rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar-scroll {
+    background-color: white;
+}
+
+.menu-button {
+    border: none;
+    background: none;
+}
+
+@media screen and (max-width:1200px) {
+    .navbar {
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .navbar {
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:480px) {}

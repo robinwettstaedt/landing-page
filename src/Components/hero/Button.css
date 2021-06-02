@@ -1,0 +1,59 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    color: rgba(50, 149, 225, var(--transparency));
+    border-radius: 30px;
+    padding: 0.75rem 2rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.hero-button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+}
+
+.dl-logo {
+    font-size: 27px;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width:1200px) {
+    .hero-button-container {
+        margin-top: 2rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .hero-button {
+        font-size: 1rem;
+    }
+    .dl-logo {
+        font-size: 20px;
+        margin-right: 0.3rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hero-button-container {
+        margin-top: 2rem;
+        padding: 0.5rem 1.2rem;
+    }
+    .hero-button {
+        font-size: 0.8rem;
+    }
+    .dl-logo {
+        font-size: 15px;
+        margin-right: 0.3rem;
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:480px) {}

@@ -1,0 +1,15 @@
+:root {
+    --transparency: 0.85;
+}
+
+.main-about {
+    background: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
