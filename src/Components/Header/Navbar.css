@@ -12,9 +12,14 @@
     background-color: white;
 }
 
+.navbar-dropped {
+    background-color: white;
+}
+
 .menu-button {
     border: none;
     background: none;
+    z-index: 1;
 }
 
 @media screen and (max-width:1200px) {

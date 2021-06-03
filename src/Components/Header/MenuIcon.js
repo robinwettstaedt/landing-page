@@ -2,10 +2,12 @@ import React from 'react';
 import { AiOutlineBars } from 'react-icons/ai';
 import './MenuIcon.css';
 
-function MenuIcon() {
+function MenuIcon({ isDropped }) {
   return (
     <>
-      <AiOutlineBars className="menu-icon" />
+      <div className={` menu-icon ${isDropped ? 'menu-icon-scroll' : ''}`}>
+        <AiOutlineBars className="bars" />
+      </div>
     </>
   );
 }

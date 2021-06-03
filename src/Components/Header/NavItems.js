@@ -10,19 +10,19 @@ function NavItems() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/About">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/Features">Features</Link>
+          <Link to="/features">Features</Link>
         </li>
         <li>
-          <Link to="/Gallery">Gallery</Link>
+          <Link to="/gallery">Gallery</Link>
         </li>
         <li>
-          <Link to="/Pricing">Pricing</Link>
+          <Link to="/pricing">Pricing</Link>
         </li>
         <li>
-          <Link to="/Contacts">Contacts</Link>
+          <Link to="/contacts">Contacts</Link>
         </li>
       </ul>
     </div>

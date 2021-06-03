@@ -2,9 +2,11 @@ import React from 'react';
 import { AiTwotoneUsb } from 'react-icons/ai';
 import './Logo.css';
 
-function Logo() {
+function Logo({ isDropped }) {
   return (
-    <div className="logo-container">
+    <div
+      className={` logo-container ${isDropped ? 'logo-container-scroll' : ''}`}
+    >
       <div className="logo">
         <AiTwotoneUsb />
       </div>

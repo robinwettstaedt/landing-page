@@ -4,6 +4,7 @@
     align-items: center;
     margin-right: auto;
     margin-left: 2rem;
+    z-index: 1;
 }
 
 .logo-container .logo :first-child {
@@ -24,6 +25,11 @@
 
 .logo-container-scroll p {
     color: black;
+}
+
+.logo-dropped {
+    color: black;
+    fill: black;
 }
 
 @media screen and (max-width:1200px) {
