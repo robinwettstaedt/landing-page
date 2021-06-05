@@ -15,10 +15,11 @@
     font-family: sans-serif;
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 .nav-items-container-scroll ul * {
-    color: black;
+    color: #2a80d6;
 }
 
 @media screen and (max-width:1200px) {

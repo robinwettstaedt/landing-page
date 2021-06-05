@@ -6,7 +6,7 @@ import iphone from '../../Assets/iphonemochupsmall.png';
 function Hero() {
   return (
     <>
-      <main>
+      <main id="home">
         <div className="image">
           <img src={iphone} alt="iphone" />
         </div>
@@ -14,7 +14,12 @@ function Hero() {
           <article>
             <h1>Connecting the world through leading technologies</h1>
             <br />
+            <br />
             <p className="hero-paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+              quisquam commodi veniam officiis voluptatem mollitia possimus
+              reiciendis maxime exercitationem. <br />
+              <br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
               quisquam commodi veniam officiis voluptatem mollitia possimus
               reiciendis maxime exercitationem.

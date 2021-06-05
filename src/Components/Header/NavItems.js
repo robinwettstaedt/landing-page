@@ -7,22 +7,34 @@ function NavItems() {
     <div className="nav-items-container">
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="home" smooth="true" duration={500}>
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="about" smooth="true" duration={500}>
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/features">Features</Link>
+          <Link to="features" smooth="true" duration={500}>
+            Features
+          </Link>
         </li>
         <li>
-          <Link to="/gallery">Gallery</Link>
+          <Link to="gallery" smooth="true" duration={500}>
+            Gallery
+          </Link>
         </li>
         <li>
-          <Link to="/pricing">Pricing</Link>
+          <Link to="pricing" smooth="true" duration={500}>
+            Pricing
+          </Link>
         </li>
         <li>
-          <Link to="/contacts">Contacts</Link>
+          <Link to="contacts" smooth="true" duration={500}>
+            Contacts
+          </Link>
         </li>
       </ul>
     </div>

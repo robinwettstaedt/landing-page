@@ -1,36 +1,46 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import './Dropdown.css';
 
 function Dropdown({ classProp }) {
   return (
-    <Router>
-      <nav className={`dropdown-nav ${classProp}`}>
-        <ul id="nav-list-mobile">
-          <li id="home-li">
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/Features">Features</Link>
-          </li>
-          <li>
-            <Link to="/Gallery">Gallery</Link>
-          </li>
-          <li>
-            <Link to="/Pricing">Pricing</Link>
-          </li>
-          <li>
-            <Link to="/Contacts">Contacts</Link>
-          </li>
-          <li>
-            <Link to="/signup">Sign up</Link>
-          </li>
-        </ul>
-      </nav>
-    </Router>
+    <nav className={`dropdown-nav ${classProp}`}>
+      <ul id="nav-list-mobile">
+        <li id="home-li">
+          <Link to="home" smooth="true" duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="about" smooth="true" duration={500}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to="features" smooth="true" duration={500}>
+            Features
+          </Link>
+        </li>
+        <li>
+          <Link to="gallery" smooth="true" duration={500}>
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link to="pricing" smooth="true" duration={500}>
+            Pricing
+          </Link>
+        </li>
+        <li>
+          <Link to="contacts" smooth="true" duration={500}>
+            Contacts
+          </Link>
+        </li>
+        <li>
+          <Link to="/signup">Sign up</Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 

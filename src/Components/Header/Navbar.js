@@ -37,15 +37,19 @@ function Navbar() {
         : 'menu-icon';
     }
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-  });
-
   function handleClick() {
     setShowMenu(!showMenu);
     setClassToggle(!classToggle);
   }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    document
+      .querySelector('.dropdown-nav')
+      .addEventListener('click', handleClick);
+  });
+
   return (
     <nav className={`navbar ${showMenu ? 'navbar-dropped' : ''}`}>
       <Logo isDropped={showMenu} />
@@ -63,6 +67,7 @@ function Navbar() {
         <MenuIcon isDropped={showMenu} />
       </button>
       <Dropdown
+        onClick={() => setClassToggle(!classToggle)}
         className="drop-container"
         classProp={classToggle ? 'visible' : 'invisible'}
       />

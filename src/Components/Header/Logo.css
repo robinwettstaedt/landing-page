@@ -20,16 +20,16 @@
 }
 
 .logo-container-scroll .logo :first-child {
-    fill: black;
+    fill: #2a80d6;
 }
 
 .logo-container-scroll p {
-    color: black;
+    color: #2a80d6;
 }
 
 .logo-dropped {
-    color: black;
-    fill: black;
+    color: #2a80d6;
+    fill: #2a80d6;
 }
 
 @media screen and (max-width:1200px) {
