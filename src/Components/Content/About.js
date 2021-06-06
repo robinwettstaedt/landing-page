@@ -1,12 +1,30 @@
-import React from 'react';
+import { React, useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 import './About.css';
+import aboutBg from '../../Assets/about-mobile-bg.png';
 
 function About() {
+  const { ref, inView } = useInView({ threshold: 0.2 });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        x: 0,
+        transition: { ease: 'easeInOut', duration: 0.5 },
+      });
+    }
+    if (!inView) {
+      animation.start({ x: '-30vw' });
+    }
+  }, [inView]);
   return (
     <>
-      <main className="main-about" id="about">
+      <div ref={ref} className="main-about" id="about">
         <article>
-          <div className="about-card">
+          <motion.div id="about" animate={animation} className="about-card">
             <svg
               className="about-icon"
               id="e37c00f5-ff96-45aa-87ea-1a24b78ba7bd"
@@ -191,25 +209,31 @@ function About() {
                 fill="#3296fa"
               />
             </svg>
+            <img
+              className="mobile-hero-img"
+              src={aboutBg}
+              alt="the background"
+            />
             <article className="about-text">
-              <h1 className="about-heading">
-                About our incredible
-                <span className="highlighted"> product</span>
-              </h1>
-              <br />
-              <br />
-              <p className="about-paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Asperiores assumenda deleniti aperiam delectus porro eius ex
-                expedita. Atque illo, voluptates laudantium accusantium odio
-                nostrum! Quia a illo amet vitae libero! Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Asperiores assumenda deleniti
-                aperiam delectus porro eius ex expedita.
-              </p>
+              <div className="about-flex">
+                <h1 className="about-heading">
+                  About our incredible
+                  <span className="highlighted"> product</span>
+                </h1>
+                <br />
+                <br />
+                <p className="about-paragraph">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Asperiores assumenda deleniti aperiam delectus porro eius ex
+                  expedita. Atque illo, voluptates laudantium accusantium odio
+                  nostrum! Quia a illo amet vitae libero! Lorem ipsum dolor sit,
+                  amet consectetur adipisicing elit.
+                </p>
+              </div>
             </article>
-          </div>
+          </motion.div>
         </article>
-      </main>
+      </div>
     </>
   );
 }

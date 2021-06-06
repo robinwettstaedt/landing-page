@@ -37,7 +37,7 @@ function Dropdown({ classProp }) {
           </Link>
         </li>
         <li>
-          <Link to="/signup">Sign up</Link>
+          <a href="https://github.com/robinwettstaedt">Sign up</a>
         </li>
       </ul>
     </nav>

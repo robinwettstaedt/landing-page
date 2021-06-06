@@ -2,6 +2,7 @@ import React from 'react';
 import Button from './Button';
 import './Hero.css';
 import iphone from '../../Assets/iphonemochupsmall.png';
+import mobileBg from '../../Assets/hero-mobile-bg.png';
 
 function Hero() {
   return (
@@ -26,12 +27,29 @@ function Hero() {
             </p>
           </article>
           <br />
-          <div className="btn-containe">
-            <Button
-              id="btn"
-              linkAdress="https://github.com/robinwettstaedt"
-              content="DOWNLOAD APP"
+          <Button
+            id="btn"
+            linkAdress="https://github.com/robinwettstaedt"
+            content="DOWNLOAD APP"
+          />
+        </div>
+        <div className="mobile-container">
+          <div className="mobile-hero-card">
+            <img
+              className="mobile-hero-img"
+              src={mobileBg}
+              alt="the background"
             />
+            <article className="hero-card-article">
+              <h1>
+                <span>Connecting </span> the world through leading technologies
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                quisquam commodi veniam officiis voluptatem mollitia possimus
+                reiciendis maxime exercitationem. <br />
+              </p>
+            </article>
           </div>
         </div>
       </main>

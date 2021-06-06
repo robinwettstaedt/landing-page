@@ -16,10 +16,23 @@
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    transition: transform 0.4s;
+}
+
+.nav-items-container li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-items-container li:active {
+    transform: scale(0.7);
 }
 
 .nav-items-container-scroll ul * {
     color: #2a80d6;
+}
+
+.nav-items-container-scroll li:hover {
+    background-color: rgba(230, 230, 230);
 }
 
 @media screen and (max-width:1200px) {

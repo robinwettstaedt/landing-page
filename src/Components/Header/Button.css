@@ -9,11 +9,16 @@
     background-color: rgba(255, 255, 255, 0.4);
     cursor: pointer;
     text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.button-container:hover {
+    transform: scale(1.2)
 }
 
 .button-container-scroll {
     color: #3296fa;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(100, 100, 100, 0.1);
 }
 
 @media screen and (max-width:1200px) {

@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import bg from '../../Assets/gallery-mobile-bg.png';
 
 function Gallery() {
   return (
@@ -351,21 +352,22 @@ function Gallery() {
                 fill="#3296fa"
               />
             </svg>
+            <img className="mobile-hero-img" src={bg} alt="the background" />
             <article className="about-text">
-              <h1 className="about-heading">
-                Winner of last year&apos;s
-                <span className="highlighted"> Design Award</span>
-              </h1>
-              <br />
-              <br />
-              <p className="about-paragraph">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Asperiores assumenda deleniti aperiam delectus porro eius ex
-                expedita. Atque illo, voluptates laudantium accusantium odio
-                nostrum! Quia a illo amet vitae libero! Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Asperiores assumenda deleniti
-                aperiam delectus porro eius ex expedita.
-              </p>
+              <div className="about-flex">
+                <h1 className="about-heading">
+                  Winner of last year&apos;s
+                  <span className="highlighted"> Design Award</span>
+                </h1>
+                <br />
+                <br />
+                <p className="about-paragraph">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Asperiores assumenda deleniti aperiam delectus porro eius ex
+                  expedita. Atque illo, voluptates laudantium accusantium odio
+                  nostrum! Quia a illo amet vitae libero!
+                </p>
+              </div>
             </article>
           </div>
         </article>
