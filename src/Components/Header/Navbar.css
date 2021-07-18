@@ -4,19 +4,21 @@
     background-color: transparent;
     display: flex;
     align-items: center;
-    position: fixed;
     z-index: 100;
     overflow-x: visible;
+    position: fixed;
 }
 
 .navbar-scroll {
     background-color: white;
     overflow-x: visible;
+    position: fixed;
 }
 
 .navbar-dropped {
     background-color: white;
     overflow-x: visible;
+    position: fixed;
 }
 
 .menu-button {
@@ -28,12 +30,14 @@
 @media screen and (max-width:1200px) {
     .navbar {
         height: 3rem;
+        position: fixed;
     }
 }
 
 @media screen and (max-width:1024px) {
     .navbar {
         height: 3rem;
+        position: fixed;
     }
 }
 
