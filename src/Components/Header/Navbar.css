@@ -11,13 +11,11 @@
 
 .navbar-scroll {
     background-color: white;
-    overflow-x: visible;
     position: fixed;
 }
 
 .navbar-dropped {
     background-color: white;
-    overflow-x: visible;
     position: fixed;
 }
 
