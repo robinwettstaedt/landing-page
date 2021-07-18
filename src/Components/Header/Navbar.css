@@ -6,14 +6,17 @@
     align-items: center;
     position: fixed;
     z-index: 100;
+    overflow-x: visible;
 }
 
 .navbar-scroll {
     background-color: white;
+    overflow-x: visible;
 }
 
 .navbar-dropped {
     background-color: white;
+    overflow-x: visible;
 }
 
 .menu-button {
@@ -34,6 +37,14 @@
     }
 }
 
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .navbar {
+        position: fixed;
+    }
+}
 
-@media screen and (max-width:480px) {}
+@media screen and (max-width:480px) {
+    .navbar {
+        position: fixed;
+    }
+}
